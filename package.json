@@ -1,0 +1,62 @@
+{
+  "name": "@thunderduck/client",
+  "version": "0.1.0",
+  "description": "Official TypeScript client for the Thunderduck REST API: query every catalog, page results, cancel runs, download exports.",
+  "keywords": [
+    "thunderduck",
+    "duckdb",
+    "lakehouse",
+    "iceberg",
+    "sql",
+    "client"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://docs.thunderduck.ai/clients/node",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thunderduck-io/thunderduck-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thunderduck-io/thunderduck-node/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "SECURITY.md",
+    "CONTRIBUTING.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --target node18 --clean",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test/client.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
