@@ -13,7 +13,7 @@ revoke it in the console (**Settings → API tokens**) before you write.
 
 ## What to include
 
-- the version of `@thunderduck/client`, your Node version and platform;
+- the version of `@thunderduck-io/client`, your Node version and platform;
 - what the problem allows an attacker to do, and under what conditions;
 - the smallest reproduction you can manage, with secrets removed.
 

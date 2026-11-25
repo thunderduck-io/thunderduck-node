@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for taking the time to look at `@thunderduck/client`.
+Thanks for taking the time to look at `@thunderduck-io/client`.
 
 ## This repository is a mirror
 
@@ -14,7 +14,7 @@ directly into it.
 
 Bug reports and feature requests are read here. Please include:
 
-- the client and Node versions (`npm ls @thunderduck/client`, `node -v`);
+- the client and Node versions (`npm ls @thunderduck-io/client`, `node -v`);
 - the runtime and platform (Node, Bun, Deno; macOS, Linux, Windows);
 - what you ran, what you expected, and what happened;
 - if relevant, the smallest request and response (with the token removed) that

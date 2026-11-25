@@ -1,5 +1,5 @@
 {
-  "name": "@thunderduck/client",
+  "name": "@thunderduck-io/client",
   "version": "0.1.0",
   "description": "Official TypeScript client for the Thunderduck REST API: query every catalog, page results, cancel runs, download exports.",
   "keywords": [

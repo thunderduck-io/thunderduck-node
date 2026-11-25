@@ -5,14 +5,14 @@ REST API. Submit SQL, wait for the run, page the result, browse the catalog and
 mint download links — from Node 18, Bun, Deno or any runtime with `fetch`.
 
 ```bash
-npm install @thunderduck/client
+npm install @thunderduck-io/client
 ```
 
 Zero runtime dependencies. Ships ESM and CommonJS with TypeScript types.
 
 [Source on GitHub](https://github.com/thunderduck-io/thunderduck-node) ·
 [Documentation](https://docs.thunderduck.ai/clients/node) ·
-[npm](https://www.npmjs.com/package/@thunderduck/client)
+[npm](https://www.npmjs.com/package/@thunderduck-io/client)
 
 ## Connect
 
@@ -20,7 +20,7 @@ Create an API token in the console (**Settings → API tokens**; it is shown
 once), then:
 
 ```ts
-import { Thunderduck } from "@thunderduck/client";
+import { Thunderduck } from "@thunderduck-io/client";
 
 const td = new Thunderduck({ token: process.env.THUNDERDUCK_TOKEN! });
 
